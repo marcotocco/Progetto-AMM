@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Marco's Beard Supply - Vendi</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="barba, beard, shop, supply, baffi, mustache, olio, shampoo, balsamo, pettine, spazzola, forbici, rasoio" />
+        <meta name="description" content="Vendi i tuoi prodotti per la cura della barba." />
+        <meta name="author" content="Marco Tocco - matricola 65081" />
+        <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    </head>
+    <body>
+        <div>
+            <h1>Metti in vendita un nuovo oggetto</h1>
+            <form action="venditore.html" method="GET">
+                <label for="NomeOggetto">Nome dell’oggetto:</label>
+                <input type="text" name="NomeOggetto" id="NomeOggetto">
+                <label for="ImmagineOggetto">URL dell'Immagine:</label>
+                <input type="url" name="ImmagineOggetto" id="ImmagineOggetto">
+                <label for="DescrizioneOggetto">Descrizione dell'oggetto:</label>
+                <textarea rows="8" cols="40" name="DescrizioneOggetto" 
+                          id="DescrizioneOggetto">Descrizione del prodotto
+                </textarea>
+                <label for="PrezzoOggetto">Prezzo dell'oggetto (€):</label>
+                <input type="number" name="PrezzoOggetto" value="0" id="PrezzoOggetto">
+                <label for="QuantitaOggetto">Quantità disponibile:</label>
+                <input type="number" name="QuantitaOggetto" value="0" id="QuantitaOggetto">
+                <input type="submit" value="Invia">
+                <input type="reset" value="Reset">
+            </form>  
+        </div>
+
+        <div>
+            <h2 id="nav">MEN&Ugrave;</h2>
+            <ul>
+                <li><a href="descrizione.html">Descrizione</a></li>
+                <li>Effettua il <a href="login.html">login!</a></li>
+            </ul> 
+        </div>
+    </body>
+</html>

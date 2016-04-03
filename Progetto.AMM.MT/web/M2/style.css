@@ -1,0 +1,45 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3-apr-2016, 22.56.23
+    Author     : Baboo
+*/
+
+body{
+    background-color: #e8edf0;
+    font-family: Sans-serif;
+    color: #d4c9b9;
+}
+
+h1 {
+    color: #78584f;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h2{
+    color: #78584f;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h3{
+    color: #b09582;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+a:link{
+    color: #768187;
+            
+}
+
+a:visited{
+    color: #3e454a;
+}
