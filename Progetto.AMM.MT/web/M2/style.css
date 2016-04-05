@@ -71,6 +71,7 @@ table#oggetti td img {
     border:1px solid #27282D;
 }
 
+
 /*  links */
 a:link{
     color: #768187;
@@ -92,7 +93,8 @@ a:hover{
 /* maggiore di 1024 (es: desktop) */
 @media only screen and (min-width: 1024px) {
 
-
+    /*generale*/
+    
     #page {
         width: 900px;
         margin-left: auto;
@@ -126,5 +128,14 @@ a:hover{
     }
     #footer{
         border-radius: 7px;
+    }
+    
+    /*tabella*/
+    table#oggetti td img{
+        width: 40px;
+        height: 100px;
+    }
+    table#oggetti td img:hover{
+    transform: scale(3, 3);
     }
 }
