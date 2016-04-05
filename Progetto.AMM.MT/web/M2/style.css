@@ -136,6 +136,6 @@ a:hover{
         height: 100px;
     }
     table#oggetti td img:hover{
-    transform: scale(3, 3);
+    transform: scale(2, 2);
     }
 }
