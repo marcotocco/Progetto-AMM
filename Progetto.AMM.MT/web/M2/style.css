@@ -1,45 +1,130 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 3-apr-2016, 22.56.23
-    Author     : Baboo
-*/
 
+/*generale*/
 body{
-    background-color: #e8edf0;
-    font-family: Sans-serif;
-    color: #d4c9b9;
+    background-image: url("img/bck5.png");
+    font-family: Sans-serif;   
+    color: #27282D;
 }
 
+#header #footer{
+
+    background-color: black;
+}
+
+#page{
+    background-color: white;
+}
+
+
+#sidebar{
+    background-color: white;
+}
+
+#magia{
+    clear: both; 
+    width: 0px; 
+    height: 0px;
+}
+
+/*titoli*/
 h1 {
-    color: #78584f;
+    color: #57280C;
     margin: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 h2{
-    color: #78584f;
+    color: #57280C;
     margin: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 h3{
-    color: #b09582;
+    color: #57280C;
     margin: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
+/* tabella oggetti */
+table#oggetti,td, tr {
+    border-collapse: collapse;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+table#oggetti{
+    margin-left: 5%;
+    margin-right: 5%;
+    table-layout: fixed;
+}
+
+table#oggetti tr:nth-child(even) {
+    background-color: #C4C8CB;
+}
+
+table#oggetti td img { 
+    border:1px solid #27282D;
+}
+
+/*  links */
 a:link{
     color: #768187;
-            
+    text-decoration: none;
 }
 
 a:visited{
     color: #3e454a;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* responsive */
+
+/* maggiore di 1024 (es: desktop) */
+@media only screen and (min-width: 1024px) {
+
+
+    #page {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        margin-bottom:25px;
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+        border-radius: 7px;
+    }
+    #sidebar {
+        float: left;
+        width: 20%;
+        padding-left: 5px;
+    }
+    #content {
+        margin-left: 20%;
+        padding-bottom: 10px;
+        padding-left: 10px; 
+    }
+    #header {
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    #header, #footer{
+        height: 100px;
+        position: relative;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-bottom: 10px solid #27282D;
+    }
+    #footer{
+        border-radius: 7px;
+    }
 }
