@@ -1,12 +1,17 @@
+/** Google Fonts **/
+@import url(https://fonts.googleapis.com/css?family=Nova+Mono);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 /** generale    **/
 body{
     background-image: url("img/bck5.png");
-    font-family: Sans-serif;   
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
     color: #27282D;
 }
 #header #footer{
 
-    background-color: black;
+    background-color: white;
 }
 #page{
     background-color: white;
@@ -15,31 +20,45 @@ body{
 #sidebar{
     background-color: white;
 }
-#magia{
-    clear: both; 
-    width: 0px; 
-    height: 0px;
-}
 
 /** titoli  **/
 h1 {
-    color: #57280C;
+    font-family: 'Nova Mono', sans-serif;
+    color: #A85861;
+    text-transform: uppercase;
     margin: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
 }
 h2{
-    color: #57280C;
+    font-family: 'Nova Mono', sans-serif;
+    color: #A85861;
+    text-transform: uppercase;
     margin: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 h3{
-    color: #57280C;
+    font-family: 'Nova Mono', sans-serif;
+    color: #A85861;
     margin: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+/*  links   */
+a:link{
+    color: #768187;
+    text-decoration: none;
+}
+a:visited{
+    color: #3e454a;
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bold;
+    text-decoration: none;
 }
 
 /** tabella oggetti **/
@@ -67,18 +86,50 @@ table#oggetti img#oggetto {
     border:1px solid #27282D;
 }
 
-/*  links   */
-a:link{
-    color: #768187;
-    text-decoration: none;
+/**  form **/
+
+/*bordo*/
+fieldset{
+    border-radius: 7px;
+    border: 2px solid #3e454a;
+    padding: 5%;
+    padding-left: 25%;
+    padding-right: 15%;
+    margin-right: 4%;
+    margin-left: 2%;
+    margin-bottom: 3%;
 }
-a:visited{
-    color: #3e454a;
-    text-decoration: none;
+
+/*caselle inserimento */
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid #3e454a;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
-a:hover{
-    font-weight: bold;
-    text-decoration: none;
+input[type=submit]{
+    border:0;
+    background: #3e454a;
+    color:white;
+}
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid #3e454a;
+    border-radius: 4px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+
+/* trick div di spaziatura */
+#magia{
+    clear: both; 
+    width: 0px; 
+    height: 0px;
 }
 
 /****    responsive  ****/
@@ -108,18 +159,29 @@ a:hover{
         padding-left: 10px; 
     }
     #header {
+        background-image: url('img/logo2.png');
+        background-repeat: no-repeat;
         padding-bottom: 10px;
         padding-left: 10px;
+        
     }
     #header, #footer{
         height: 100px;
         position: relative;
         padding-left: 20px;
         padding-right: 20px;
-        border-bottom: 10px solid #27282D;
+        border-bottom: 10px solid #3e454a;
     }
+
     #footer{
         border-radius: 7px;
+    }
+
+    
+    /** logo **/   
+    
+    #header h1{
+       display: none; /* nasconde la scritta per risoluzioni alte lasciando solo l'immagine */
     }
 
     /** tabella **/
