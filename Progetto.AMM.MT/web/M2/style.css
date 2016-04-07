@@ -4,7 +4,7 @@
 
 /** generale    **/
 body{
-    background-image: url("img/bck5.png");
+    background-image: url("img/bck.png");
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #27282D;
@@ -160,7 +160,7 @@ textarea{
         padding-left: 10px; 
     }
     #header {
-        background-image: url('img/logo2.png');
+        background-image: url('img/logobig.png');
         background-repeat: no-repeat;
         padding-bottom: 10px;
         padding-left: 10px;
@@ -232,7 +232,7 @@ textarea{
         padding-left: 10px; 
     }
     #header {
-        background-image: url('img/logo2.png');
+        background-image: url('img/logobig.png');
         background-repeat: no-repeat;
         background-size:contain;
         padding-bottom: 10px;
@@ -240,8 +240,8 @@ textarea{
     }
     #header img{
         max-width: 100%;
-	height: auto;
-	width: auto\9; /* IE9 */
+        height: auto;
+        width: auto\9; /* IE9 */
     }
     #header, #footer{
         height: 100px;
@@ -286,47 +286,60 @@ textarea{
 
 }
 
-    @media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px){
 
-        /** generale **/
+    /** generale **/
 
-        #page {
-            margin-top: 25px;
-            margin-bottom:25px;
-            box-shadow: 0 0 10px rgba(0,0,0,.2);
-            border-radius: 7px;
-        }
-        #content {
-            padding-bottom: 10px;
- 
-        }        
-        #header, #footer{
-            height: 100px;
-            position: relative;
-            border-bottom: 10px solid #3e454a;
-        }
-
-        #footer{
-            border-radius: 7px;
-        }
-
-
-        /** tabella **/
-
-        table#oggetti img#cart{
-            width: 40px;
-            height: 40px;      
-            opacity: 0.7;
-            filter: alpha(opacity=70); /* IE8 e precedenti */
-        }
-        /* scurisce al passaggio del mouse */
-        table#oggetti img#cart:hover{  
-            opacity: 1.0;
-            filter: alpha(opacity=100); /* IE8 e precedenti  */
-        }
-        table#oggetti img#oggetto{
-            display:none;
-        }
-
-
+    #page {
+        margin-top: 25px;
+        margin-bottom:25px;
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+        border-radius: 7px;
     }
+    #header {
+        background-image: url('img/logosmall.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+    #header h1{
+        display: none; /* nasconde la scritta per risoluzioni alte lasciando solo l'immagine */
+    }
+
+    #content {
+        padding-bottom: 10px;
+
+    }        
+    #header, #footer{
+        height: 100px;
+        position: relative;
+        border-bottom: 10px solid #3e454a;
+    }
+
+    #footer{
+        border-radius: 7px;
+    }
+
+
+    /** tabella **/
+
+    table#oggetti img#cart{
+        width: 40px;
+        height: 40px;      
+        opacity: 0.7;
+        filter: alpha(opacity=70); /* IE8 e precedenti */
+    }
+    /* scurisce al passaggio del mouse */
+    table#oggetti img#cart:hover{  
+        opacity: 1.0;
+        filter: alpha(opacity=100); /* IE8 e precedenti  */
+    }
+    /* cancella la colonna foto */
+    table#oggetti #foto{
+        display:none;
+    }
+
+
+}
