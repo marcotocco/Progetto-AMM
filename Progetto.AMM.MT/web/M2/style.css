@@ -13,12 +13,27 @@ body{
 
     background-color: white;
 }
+
+#footer{
+    text-align: center;
+}
+
+#footer span{
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: normal;    
+    color: yellow;
+}
 #page{
     background-color: white;
 }
 
 #sidebar{
     background-color: white;
+
+}
+#sidebar ul li{
+    list-style: none;
 }
 
 /** titoli  **/
@@ -28,7 +43,6 @@ h1 {
     text-transform: uppercase;
     margin: 0px;
     padding-top: 10px;
-    padding-bottom: 10px;
     text-align: center;
 }
 h2{
@@ -77,13 +91,35 @@ table#oggetti{
     margin-right: 5%;
     table-layout: fixed;
 }
+
 /*  colore alternato    */
-table#oggetti tr:nth-child(even) {
+table#oggetti tr pari{
     background-color: #C4C8CB;
 }
 /*  bordo dell'immagine dell'oggetto  */
 table#oggetti img#oggetto { 
     border:1px solid #27282D;
+}
+
+table#oggetti img#oggetto{
+    width: 40px;
+    height: 100px;
+}
+/*  zoom al passaggio del mouse */
+table#oggetti img#oggetto:hover{
+    transform: scale(2, 2);
+}
+
+table#oggetti img#cart{
+    width: 40px;
+    height: 40px;      
+    opacity: 0.7;
+    filter: alpha(opacity=70); /* IE8 e precedenti */
+}
+/* scurisce al passaggio del mouse */
+table#oggetti img#cart:hover{  
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* IE8 e precedenti  */
 }
 
 /**  form **/
@@ -132,10 +168,9 @@ textarea{
     height: 0px;
 }
 
-/***** 
 /****    responsive  ****/
 
-/*** maggiore di 1024 (es: desktop) ***/
+/*** maggiore di 1024px (es: desktop) ***/
 @media only screen and (min-width: 1024px) {
 
     /** generale **/
@@ -150,11 +185,12 @@ textarea{
         border-radius: 7px;
     }
     #sidebar {
-        float: left;
+        display:table-cell;
         width: 20%;
         padding-left: 5px;
     }
     #content {
+        display:table;
         margin-left: 20%;
         padding-bottom: 10px;
         padding-left: 10px; 
@@ -182,33 +218,11 @@ textarea{
     /** logo **/   
 
     #header h1{
-        display: none; /* nasconde la scritta per risoluzioni alte lasciando solo l'immagine */
+        display: none; /* nasconde la scritta per risoluzioni alte lasciando solo l'immagine (non più utile, visto il doppio logo) */
     }
-
-    /** tabella **/
-
-    table#oggetti img#cart{
-        width: 40px;
-        height: 40px;      
-        opacity: 0.7;
-        filter: alpha(opacity=70); /* IE8 e precedenti */
-    }
-    /* scurisce al passaggio del mouse */
-    table#oggetti img#cart:hover{  
-        opacity: 1.0;
-        filter: alpha(opacity=100); /* IE8 e precedenti  */
-    }
-    table#oggetti img#oggetto{
-        width: 40px;
-        height: 100px;
-    }
-    /*  zoom al passaggio del mouse */
-    table#oggetti img#oggetto:hover{
-        transform: scale(2, 2);
-    }
-
 }
 
+/*** tra i 1024 e i 600px (es tablet, netbook etc.) ***/
 @media only screen and (min-width: 600px) and (max-width: 1024px){
 
     /** generale **/
@@ -225,6 +239,7 @@ textarea{
         float: left;
         width: 20%;
         padding-left: 5px;
+
     }
     #content {
         margin-left: 20%;
@@ -255,37 +270,14 @@ textarea{
         border-radius: 7px;
     }
 
-
     /** logo **/   
 
     #header h1{
-        display: none; /* nasconde la scritta per risoluzioni alte lasciando solo l'immagine */
-    }
-
-    /** tabella **/
-
-    table#oggetti img#cart{
-        width: 40px;
-        height: 40px;      
-        opacity: 0.7;
-        filter: alpha(opacity=70); /* IE8 e precedenti */
-    }
-    /* scurisce al passaggio del mouse */
-    table#oggetti img#cart:hover{  
-        opacity: 1.0;
-        filter: alpha(opacity=100); /* IE8 e precedenti  */
-    }
-    table#oggetti img#oggetto{
-        width: 40px;
-        height: 100px;
-    }
-    /*  zoom al passaggio del mouse */
-    table#oggetti img#oggetto:hover{
-        transform: scale(2, 2);
+        display: none; /* nasconde la scritta per risoluzioni alte lasciando solo l'immagine    */
     }
 
 }
-
+/*** sotto i 600px (es: smartphone) ***/
 @media only screen and (max-width: 600px){
 
     /** generale **/
@@ -307,35 +299,22 @@ textarea{
     #header h1{
         display: none; /* nasconde la scritta per risoluzioni alte lasciando solo l'immagine */
     }
-
     #content {
         padding-bottom: 10px;
-
     }        
     #header, #footer{
         height: 100px;
         position: relative;
         border-bottom: 10px solid #3e454a;
     }
-
+    #sidebar{
+        text-align: center;
+    }
     #footer{
         border-radius: 7px;
     }
-
-
     /** tabella **/
 
-    table#oggetti img#cart{
-        width: 40px;
-        height: 40px;      
-        opacity: 0.7;
-        filter: alpha(opacity=70); /* IE8 e precedenti */
-    }
-    /* scurisce al passaggio del mouse */
-    table#oggetti img#cart:hover{  
-        opacity: 1.0;
-        filter: alpha(opacity=100); /* IE8 e precedenti  */
-    }
     /* cancella la colonna foto */
     table#oggetti #foto{
         display:none;
