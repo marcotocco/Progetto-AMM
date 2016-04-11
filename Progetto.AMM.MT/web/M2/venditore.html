@@ -1,4 +1,3 @@
-
 <!DOCTYPE html >
 
 <html>
@@ -24,8 +23,8 @@
 
             <!--  sidebar -->
             <div id="sidebar">
-                <h2 id="nav">MEN&Ugrave;</h2>
                 <ul>
+                    <li><h2 id="nav">MEN&Ugrave;</h2></li>
                     <li><a href="descrizione.html">Descrizione</a></li>
                     <li><a href="cliente.html">Cliente</a></li>
                     <li><a href="venditore.html">Venditore</a></li>    
@@ -38,28 +37,29 @@
 
                 <h1>Metti in vendita un nuovo oggetto</h1>
                 <fieldset>
-                <form action="venditore.html" method="GET">
-                    <label for="NomeOggetto">Nome dell’oggetto:</label>
-                    <input type="text" name="NomeOggetto" id="NomeOggetto">
-                    <label for="ImmagineOggetto">URL dell'Immagine:</label>
-                    <input type="url" name="ImmagineOggetto" id="ImmagineOggetto">
-                    <label for="DescrizioneOggetto">Descrizione dell'oggetto:</label>
-                    <textarea rows="8" cols="40" name="DescrizioneOggetto" 
-                              id="DescrizioneOggetto">Descrizione del prodotto</textarea>
-                    <label for="PrezzoOggetto">Prezzo dell'oggetto (€):</label>
-                    <input type="number" name="PrezzoOggetto" value="0" id="PrezzoOggetto">
-                    <label for="QuantitaOggetto">Quantità disponibile:</label>
-                    <input type="number" name="QuantitaOggetto" value="0" id="QuantitaOggetto">
-                    <input type="submit" value="Invia">
-                    <input type="reset" value="Reset">
-                </form>  
-                    </fieldset>
+                    <form action="venditore.html" method="GET">
+                        <label for="NomeOggetto">Nome dell’oggetto:</label>
+                        <input type="text" name="NomeOggetto" placeholder="Nome.." id="NomeOggetto">
+                        <label for="ImmagineOggetto">URL dell'Immagine:</label>
+                        <input type="url" name="ImmagineOggetto" placeholder="URL Immagine.." id="ImmagineOggetto">
+                        <label for="DescrizioneOggetto">Descrizione dell'oggetto:</label>
+                        <textarea rows="8" cols="40" name="DescrizioneOggetto" placeholder="Descrizione.."
+                                  id="DescrizioneOggetto"></textarea>
+                        <label for="PrezzoOggetto">Prezzo dell'oggetto (€):</label>
+                        <input type="number" name="PrezzoOggetto" placeholder="Prezzo.." id="PrezzoOggetto">
+                        <label for="QuantitaOggetto">Quantità disponibile:</label>
+                        <input type="number" name="QuantitaOggetto" placeholder="Quantità.." id="QuantitaOggetto">
+                        <input type="submit" value="Invia">
+                        <input type="reset" value="Reset">
+                    </form>  
+                </fieldset>
 
             </div>
             <div id="magia" ></div>
             <!--  footer -->
             <footer>
                 <div id="footer">
+                    <p>Copyright © 2016 Marco -  Matricola 65081</p>
                 </div>             
             </footer>
         </div>
