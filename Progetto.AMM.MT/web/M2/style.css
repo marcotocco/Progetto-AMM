@@ -1,0 +1,335 @@
+/** Google Fonts **/
+@import url(https://fonts.googleapis.com/css?family=Nova+Mono);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/** generale    **/
+body{
+    background-image: url("img/bck.png");
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #27282D;
+}
+#header #footer{
+
+    background-color: white;
+}
+
+#header{
+    border-bottom: 10px solid #3e454a;
+}
+
+#footer{
+    border-top: 5px solid #3e454a;
+    text-align: center;
+    height: 50px;
+}
+
+#page {
+    margin-top: 25px;
+    margin-bottom:25px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    border-radius: 7px;
+    background-color: white;
+}
+
+#content {
+    padding-bottom: 10px;
+}
+
+#sidebar{
+    background-color: white;
+}
+#sidebar ul li{
+    list-style: none;
+}
+
+/** titoli  **/
+h1 {
+    font-family: 'Nova Mono', sans-serif;
+    color: #A85861;
+    text-transform: uppercase;
+    margin: 2px;
+    padding-top: 10px;
+    text-align: center;
+}
+h2{
+    font-family: 'Nova Mono', sans-serif;
+    color: #A85861;
+    text-transform: uppercase;
+    margin: 2px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+h3{
+    font-family: 'Nova Mono', sans-serif;
+    color: #A85861;
+    margin: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*  links   */
+a:link{
+    color: #768187;
+    text-decoration: none;
+}
+a:visited{
+    color: #3e454a;
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/** tabella oggetti **/
+tr.intestazione{
+    background-color: #3e454a ; 
+    color: white;
+}
+table#oggetti,td, tr {
+    border-collapse: collapse;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+table#oggetti{
+    margin-left: 5%;
+    margin-right: 5%;
+    table-layout: fixed;
+}
+
+/*  colore alternato    */
+table#oggetti tr.dispari{
+    background-color: #C4C8CB;
+}
+/*  bordo dell'immagine dell'oggetto  */
+table#oggetti img.oggetto { 
+    border:1px solid #27282D;
+}
+
+table#oggetti img.oggetto{
+    width: 40px;
+    height: 100px;
+}
+/*  zoom al passaggio del mouse */
+table#oggetti img.oggetto:hover{
+    transform: scale(2, 2);
+}
+
+table#oggetti img.cart{
+    width: 40px;
+    height: 40px;      
+    opacity: 0.7;
+    filter: alpha(opacity=70); /* IE8 e precedenti */
+}
+/* scurisce al passaggio del mouse */
+table#oggetti img.cart:hover{  
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* IE8 e precedenti  */
+}
+
+/**  form **/
+
+/*bordo*/
+fieldset{
+    border-radius: 7px;
+    border: 2px solid #3e454a;
+    padding: 5%;
+    padding-left: 25%;
+    padding-right: 15%;
+    margin-right: 4%;
+    margin-left: 2%;
+    margin-bottom: 3%;
+}
+
+/*caselle inserimento */
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid #3e454a;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+input[type=submit]{
+    border:0;
+    background: #3e454a;
+    color:white;
+    outline: none;
+}
+input[type=reset]{
+    padding: 12px 20px;
+    border:0;
+    background: white;
+    color:#3e454a;
+    outline: none;
+}
+textarea{
+    padding: 12px 20px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid #3e454a;
+    border-radius: 4px;
+    resize: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* liste */
+ul {
+    margin-left: 15px;
+    padding-left: 10px;
+
+}
+
+
+
+/* trick div di spaziatura */
+#magia{
+    clear: both; 
+    width: 0px; 
+    height: 0px;
+}
+/* logo */   
+
+#header h1{
+    display: none; /* nasconde la scritta perché ho deciso di usare 2 immagini e dovevo modificare l'html di tutte le pagine   */
+}
+
+/****    responsive  ****/
+
+/*** maggiore di 1024px (es: desktop) ***/
+@media only screen and (min-width: 1024px) {
+
+    /** generale **/
+
+    #page {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    #header {
+        height: 100px;
+        background-image: url('img/logobig.png');
+        background-repeat: no-repeat;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+    #header, #footer{
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+
+    #content {
+        display:table;
+        margin-left: 20%;
+        padding-left: 10px; 
+    }
+    #sidebar {
+        width: 20%;
+        float: left;
+        padding: 0px;
+    }
+
+
+    /** sidebar **/
+    #sidebar ul{
+        padding-left: 10px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    #sidebar h2{
+        text-align: center;
+    }
+
+}
+
+/*** tra i 1024 e i 480px (es tablet, netbook etc.) ***/
+@media only screen and (min-width: 480px) and (max-width: 1024px){
+
+    /** generale **/
+
+    #page {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #header {
+        background-image: url('img/logobig.png');
+        background-repeat: no-repeat;
+        background-size:contain;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+    #header img{
+        max-width: 100%;
+        height: auto;
+    }
+    #header, #footer{
+        height: 100px;
+        position: relative;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+
+    #content {
+        margin-left: 20%;
+        padding-left: 10px; 
+    }
+
+    #sidebar {
+        float: left;
+        width: 20%;
+        padding-left: 5px;
+
+    }
+
+}
+
+/*** sotto i 480px (es: smartphone) ***/
+@media only screen and (max-width: 480px){
+
+    /** generale **/
+
+    #header {
+        background-image: url('img/logosmall.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
+    }
+
+    #header, #footer{
+        height: 100px;
+        padding: 5px;
+        position: relative;
+    }
+
+
+
+
+    #sidebar{
+        text-align: center;
+    }
+    h1, h2, h3, p {
+        padding: 10px;
+    }
+
+
+
+    /** tabella **/
+
+    /* cancella la colonna foto */
+    table#oggetti .foto{
+        display:none;
+    }
+}
+
