@@ -1,0 +1,81 @@
+<%-- 
+    Document   : descrizione
+    Created on : 30-apr-2016, 1.38.43
+    Author     : Baboo
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+    <jsp:include page="comuni/head.jsp?titolo=Descrizione" />
+
+    <body>
+        <div id="page">
+            <jsp:include page="comuni/header.jsp" />
+            <jsp:include page="comuni/sidebar.jsp" />
+
+            <div id="content">
+                <div>
+                    <h1>Descrizione</h1>  
+                    <ul> 
+                        <li> <a href="#p1">Chi siamo</a></li>
+                        <li> <a href="#p2">Prodotti</a>
+                            <ul>
+                                <li><a href="#p2.1">Sapone e Shampoo</a></li>
+                                <li><a href="#p2.2">Balsamo</a></li>
+                                <li><a href="#p2.3">Olio</a></li>
+                                <li><a href="#p2.4">Cera</a></li>
+                                <li><a href="#p2.5">Spazzole e pettini</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="#p3">Regole</a> </li>
+                    </ul>
+                </div>
+
+                <h2 id="p1">Chi siamo</h2>
+                <p>
+                    Marco's beard Supply nasce nel 2016 come progetto didattico per il corso di studi di AMM presso la facoltà di informatica di Cagliari, lo scopo principale è creare un marketplace in cui vendere e acquistare prodotti di qualità per la cura della propria barba.
+                    Puntiamo ad avere, oltre ai migliori prodotti commerciali, un'ampia scelta di prodotti home-made che utilizzano materie prime pregiate e ricercate.
+                </p>
+
+                <h2 id="p2">Prodotti</h2>
+                <h3 id="p2.1">Sapone e shampoo</h3>
+                <p>
+                    La pulizia della pelle è fondamentale, un rito quotidiano, per prevenire irritazioni, forfora e sfatare i falsi miti che la barba sia un bacino di germi.
+                </p>
+                <ul>
+                    <li>Sapone: Un sapone non aggressivo è ideale, altrimenti si rischia di seccare troppo la pelle. Solido o liquido che sia, è una questione di praticitá.</li>
+                    <li>Shampoo: Lo Shampoo è invece più utile con la barba di qualche centimetro. Crea una corretta emulsione per pulire in maniera approfondita peli e cute. Da usare ogni 2 o 3 giorni.</li>
+                </ul>
+                <p></p>
+                <h3 id="p2.2">Balsamo</h3>
+                <p>
+                    Il balsamo come per i capelli, serve per ammorbidire il pelo e districare eventuali nodi. Da usare con una barba superiore ai 5 cm, prima non necessario, a meno che non sia super ispida. Da usare dopo lo shampoo.
+                </p>
+                <h3 id="p2.3">Olio</h3>
+                <p>
+                    Con barba corta, basta qualche goccia per ammorbidire la cute e dare un effetto brillante. 
+                    Per barbe di qualche centimetro inizia ad essere l'essenza della vanità, rendendo la barba morbida e lucente; ovviamente serve qualche goccia in piú. 
+                    Qualunque sia la lunghezza, la rende pregna di profumi e aromi che renderanno piacevole la barba anche a chi vi sta intorno.    
+                </p>
+                <h3 id="p2.4">Cera</h3>
+                <p>
+                    Manco a dirlo, serve per modellare il baffo. Un ruolo fondamentale lo gioca la lunghezza del baffo, la sua consistenza e la forma che volete ottenere. 
+                    A seconda del mix tra cera d’api e oli si possono avere diverse tipologie di tenuta. Se la cera è blanda puó aiutare nel formare la barba,
+                </p>
+                <h3 id="p2.5">Spazzole e pettini</h3>
+                <p>
+                    Strumenti essenziali per la modellazione e ligiatura della propria barba.
+                </p>
+                <ul>
+                    <li>Spazzole: il cuore della spazzola sta nella setola e nella sua capacità di ligiare i vostri peli. Se avete una barba corta ribelle, aiutatela con una spazzola a setola media, tipo cinghiale. Se avete una barba lunga potete divertirvi come volete. Se invece è molto folta servono setole in grado di attraversare la vostra barriera piliferla. Uno dei ruoli della barba è anche quello di pulire la cute.</li>
+                    <li>Pettini: esistono di tante forme e materiali, idoneo principalmente per la cura dell baffo. Sconsigliato l'utilizzo con la barba perché il pettine tende a strappare il pelo, utile comunque a barba bagnata dopo lo shampoo/balsamo per modellare.     </li>
+                </ul>
+            </div>
+            <div id="magia" ></div>
+            
+            <jsp:include page="comuni/footer.jsp" />
+        </div>    
+    </body>
+</html>
